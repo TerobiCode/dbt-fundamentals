@@ -1,5 +1,6 @@
 with customers as (
     select * from {{ source('jaffle_shop', 'customers') }}
+),
 
 orders as (
     select * from {{ source('jaffle_shop', 'orders') }}
